@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/lib/angular/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/programInterest.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <div>
+           
+            <form method="post" name="fuzz" ng-controller="formController"   id="form83" class="elq-form" action="https://s1612941136.t.eloqua.com/e/f2" novalidate>
+                <input value="fuzz" type="hidden" name="elqFormName"> <input value="1612941136" type="hidden" name="elqSiteId"> <input name="elqCampaignId" type="hidden">
+                <fieldset ng-show="step == 1">
+                  <h1>Someone Thinks You're Pretty Great</h1>
+                  <p>We do too. So we'll waive your application fee in exchange for some basic information. Any application that doesn't use the Centralized Application Service (CAS) is eligible. To get started, please choose an area of study.</p>
+                <div class="field-wrapper" style="float: left; width: 100%; clear: both" >
+                    <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%" >
+                      <p style="position: relative; margin: 0px; padding: 0px" >
+                        <label for="field0" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap" >
+                          Academic Level of Interest
+                        </label>
+                        <select id="field0" name="academicLevelOfInterest1" style="width: 100%" ng-model="academicLevelOfInterest1" ng-required="true">
+                          <option value="" >
+                            - Select -
+                          </option>
+                          <option value="0d5f51c4-8ed9-e011-8d3e-005056b8001d" >
+                            Graduate
+                          </option>
+                          <option value="5ff36977-a473-e111-9cb6-005056b8001d" >
+                            Undergraduate
+                          </option>
+                        </select>
+                      </p>
+                      <p ng-show="fuzz.academicLevelOfInterest1.$invalid && fuzz.academicLevelOfInterest1.$touched">You must enter your academic level of interest</p>                    
+                  </div>
+                </div>   
+                <div id="formElement1" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field0" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">AcademicAreaInterest</label> <select id="field1" name="areaInterest" style="width: 100%" ng-model="areaInterest" ng-required="true">
+                                    <option value="" selected="selected">
+                                        Select an area of interest
+                                    </option>
+                                    <option value="Undecided">
+                                        Undecided/Not Sure
+                                    </option>
+                                    <option value="Business">
+                                        Business and Management
+                                    </option>
+                                    <option value="CIS">
+                                        Computer and Information Sciences
+                                    </option>
+                                    <option value="Education">
+                                        Education
+                                    </option>
+                                    <option value="Healthcare">
+                                        Healthcare
+                                    </option>
+                                    <option value="HSS">
+                                        Fine Arts, Humanities and Social Sciences
+                                    </option>
+                                    <option value="STEM">
+                                        Science, Technology, Engineering and Math
+                                    </option>
+                                </select>
+                            </p>
+                            <p ng-show="fuzz.areaInterest.$invalid && fuzz.areaInterest.$touched">You must enter your area of interest</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement2" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field1" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">Academic Program of Interest</label> <select id="field2" name="academicProgramOfInterest1" style="width: 100%"
+                                ng-model="user.academicProgramOfInterest1"
+                                ng-required="true">
+                                    
+                                </select>
+                            </p>
+                            <p ng-show="fuzz.academicProgramOfInterest1.$invalid && fuzz.academicProgramOfInterest1.$touched">You must enter your program of interest</p>
+                        </div>
+                    </div>
+                </div>
+                <div>                  
+                  <button type="button" ng-disabled="fuzz.academicProgramOfInterest1.$invalid || fuzz.areaInterest.$invalid || fuzz.academicLevelOfInterest1.$invalid" ng-click="nextStep()">Next</button>                  
+                </div>
+              </fieldset>
+              <fieldset ng-show="step == 2">
+                <h1>Good Choice.</h1>
+                <h2>{{stepTwoHeader}}</h2>
+                <p>We'll email you a code that lets you apply for free. Just fill out the information below. On the next page, you can also share your ambition with the world as part of our Big Table community. Don't forget to tell us who sent you here!</p>
+                <div id="formElement3" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field2" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">First Name <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label> <input id="field3" name="firstName" type="text" value="" style="width: 100%"
+                                ng-model="user.firstName"
+                                ng-required="true">
+                            </p>
+                            <p ng-show="fuzz.firstName.$invalid && fuzz.firstName.$touched">You must enter your first name</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement4" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field3" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">Last Name <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label> <input id="field4" name="lastName" type="text" value="" style="width: 100%"
+                                ng-model="user.lastName"
+                                ng-required="true">
+                            </p>
+                            <p ng-show="fuzz.lastName.$invalid && fuzz.lastName.$touched">You must enter your last name</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement5" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field4" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">Phone <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label> <input id="field5" name="phoneNumber" type="text" value="" style="width: 100%" 
+                                ng-model="user.phoneNumber"
+                                ng-pattern="/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/"
+                                ng-minlength="10">
+                            </p>
+                            <p ng-show="fuzz.phoneNumber.$invalid && fuzz.phoneNumber.$touched">You must enter a valid 10 digit phone number</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement6" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field5" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">Email Address <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label> <input id="field6" name="emailAddress" type="email" value="" style="width: 100%"
+                                ng-model="user.emailAddress"
+                                ng-required="true">
+                            </p>
+                            <p ng-show="fuzz.emailAddress.$invalid && fuzz.emailAddress.$touched">You must enter a valid email</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement7" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field6" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">Referred by faculty (name)</label> <input id="field7" name="referredBy" type="text" value="" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement8" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input id="field8" type="hidden" name="hfCID1" value="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement9" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input id="field9" type="hidden" name="hfCID2" value="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement10" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input id="field10" type="hidden" name="hfCID3" value="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement11" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input id="field11" type="hidden" name="hfCollege" value="100000002">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement12" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input id="field12" type="hidden" name="hfAdmit" value="38980113-DEA8-E011-B7AA-005056B8001D">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement13" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field12" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">Originating Website</label> <input id="field13" name="originatingWebsite1" type="text" value="" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement14" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="field13" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap">What color is the sky?</label> <input id="field14" name="sky" type="text" value="" style="width: 100%"> <label class="instructions" style="color: #444444; display: block; font-size: 10px; padding: 6px 0pt 3px; margin: 0px">Please answer blue above</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-default" ng-click="prevStep()">Previous step</button>
+                <div id="formElement15" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper"></div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input type="submit" value="Request Information &gt;" class="submit-button" style="font-size: 100%; height: 50px; width: 100%"
+                                ng-disabled="fuzz.$invalid">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
