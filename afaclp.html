@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><!-- StartFormCustomCSS --><!-- EndFormCustomCSS --><meta charset="utf-8"><meta content="IE=edge" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Affiliate Faculty Initial Landing Page</title>
+    <!--Google Font-->
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
+    <!--Font awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.regis.edu/AF_first_page/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.regis.edu/AF_first_page/css/af_initial_page.css">
+
+    <!-- Respond.js proxy on external server -->
+    <link href="http://cdn.regis.edu/javascript/respondjs/respond-proxy.html" id="respond-proxy" rel="respond-proxy">
+
+    <!-- Respond.js redirect location on local server -->
+    <link href="http://img03.en25.com/EloquaImages/clients/RegisEloqua14/{0dfea9ef-301c-4f75-ad75-119d07defde4}_respond.proxy.gif" id="respond-redirect" rel="respond-redirect">
+
+
+
+    <!-- Respond.js proxy script on local server -->
+    <script src="http://img03.en25.com/Web/RegisEloqua14/{886c857a-6432-479e-a7d5-da481c099e1c}_respond.proxy.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+<link rel="stylesheet" type="text/css" href="http://cdn.regis.edu/AF_first_page/css/ie9-and-down.css" />
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]---->
+    <script src="http://cdn.regis.edu/javascript/modernizr/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="http://cdn.regis.edu/AF_first_page/js/lib/angular/angular.min.js"></script>-->
+    <script src="https://code.angularjs.org/1.3.1/angular.min.js"></script>    
+    <script src="http://cdn.regis.edu/AF_first_page/js/app.js"></script>
+    <script src="http://cdn.regis.edu/AF_first_page/js/programInterest.js"></script>
+  </head>
+  <body ng-app="myApp">
+      <!-- Google Tag Manager -->
+        <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-WCGSLP" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WCGSLP');</script>
+        <!-- End Google Tag Manager -->  
+
+    <header>
+      <div class="banner">
+        <div class="container">
+            <img alt="Regis University" src="http://cdn.regis.edu/AF_first_page/img/regis_header_logo_mobile.png" class="img-responsive mobile-image">
+            <img alt="Regis University" src="http://cdn.regis.edu/AF_first_page/img/regis_header_logo.png" class="img-responsive desktop-image">
+        </div>
+      </div><!-- banner  -->     
+    </header>
+    <div class="container main">      
+       <div>
+            <form class="elq-form" id="form70" action="https://s1612941136.t.eloqua.com/e/f2" name="affiliate_faculty_lead_gen" method="post" ng-controller="formController" novalidate>
+                <input type="hidden" name="elqFormName" value="affiliate_faculty_lead_gen"><input type="hidden" name="elqSiteId" value="1612941136"><input type="hidden" name="elqCampaignId">
+                  <fieldset ng-show="step == 1">
+                    <h1>Someone Thinks You're Pretty Great</h1>
+                    <p>We do too. So we'll waive your application fee in exchange for some basic information. Any application that doesn't use the Centralized Application Service (CAS) is eligible. To get started, please choose an area of study.</p>
+                    <div id="formElement0">                  
+                        <p style="position: relative; margin: 0px; padding: 0px" >
+                          <select id="field0" name="academicLevelOfInterest1" ng-model="academicLevelOfInterest1" ng-required="true">
+                            <option value="" >
+                              What is your academic level of interest?
+                            </option>
+                            <option value="0d5f51c4-8ed9-e011-8d3e-005056b8001d" >
+                              Graduate
+                            </option>
+                            <option value="5ff36977-a473-e111-9cb6-005056b8001d">
+                              Undergraduate
+                            </option>
+                          </select>
+                        </p>
+                        <p class="errorMessage" ng-show="affiliate_faculty_lead_gen.academicLevelOfInterest1.$invalid && affiliate_faculty_lead_gen.academicLevelOfInterest1.$touched">You must enter your academic level of interest</p>
+                  </div>
+                    <div id="formElement1" ng-if="academicLevelOfInterest1=='5ff36977-a473-e111-9cb6-005056b8001d'" >                  
+                        <p style="position: relative; margin: 0px; padding: 0px" >
+                          <select id="field1" name="highSchoolStudent"  ng-required="true" ng-model="highSchoolStudent" >
+                            <option value="" >
+                              Are you a high school student?
+                            </option>
+                            <option value="yes" >
+                              Yes
+                            </option>
+                            <option value="no" >
+                              No
+
+                            </option>
+                          </select>
+                        </p>
+                        <p class="errorMessage" ng-show="affiliate_faculty_lead_gen.highSchoolStudent.$invalid && affiliate_faculty_lead_gen.highSchoolStudent.$touched">You must enter you are a high school student</p>
+                  </div>
+                  <div id="formElement2">                     
+                    <p style="position: relative; margin: 0px; padding: 0px">
+                        <select id="field2" name="areaInterest" ng-model="areaInterest" ng-required="true" ng-disabled="(affiliate_faculty_lead_gen.academicLevelOfInterest1.$invalid) || (affiliate_faculty_lead_gen.academicLevelOfInterest1=='5ff36977-a473-e111-9cb6-005056b8001d' || affiliate_faculty_lead_gen.highSchoolStudent.$invalid)">
+                            <option value="" selected="selected">
+                                What is your area of interest?
+                            </option>
+                            <!-- <option value="Undecided">
+                                Undecided/Not Sure
+                            </option> -->
+                            <option value="Business">
+                                Business and Management
+                            </option>
+                            <option value="CIS">
+                                Computer and Information Sciences
+                            </option>
+                            <option value="Education">
+                                Education
+                            </option>
+                            <option value="Healthcare">
+                                Healthcare
+                            </option>
+                            <option value="HSS">
+                                Fine Arts, Humanities and Social Sciences
+                            </option>
+                            <option value="STEM">
+                                Science, Technology, Engineering and Math
+                            </option>
+                        </select>
+                    </p>
+                    <p class="errorMessage" ng-show="affiliate_faculty_lead_gen.areaInterest.$invalid && affiliate_faculty_lead_gen.areaInterest.$touched">You must enter your area of interest</p>                          
+                  </div>
+                  <div id="formElement3">                      
+                    <p style="position: relative; margin: 0px; padding: 0px">
+                        <select id="field3" name="academicProgramOfInterest1" 
+                        ng-model="academicProgramOfInterest1"
+                        ng-required="true"
+                        ng-disabled="affiliate_faculty_lead_gen.academicLevelOfInterest1.$invalid || affiliate_faculty_lead_gen.areaInterest.$invalid">
+                          <option value="">
+                            What program are you interested in?
+                          </option>                                      
+                        </select>
+                    </p>
+                    <p class="errorMessage"ng-show="affiliate_faculty_lead_gen.academicProgramOfInterest1.$invalid && affiliate_faculty_lead_gen.academicProgramOfInterest1.$touched">You must enter your program of interest</p>                     
+                  </div>
+                  <div>
+                    <p style="text-align:center">                
+                      <button class="nextButton btn btn-lg" type="button" ng-disabled="affiliate_faculty_lead_gen.academicProgramOfInterest1.$invalid || affiliate_faculty_lead_gen.areaInterest.$invalid || affiliate_faculty_lead_gen.academicLevelOfInterest1.$invalid" ng-click="nextStep()">NEXT</button>
+                    </p>                  
+                  </div>
+                </fieldset><!-- end step 1 -->
+                <fieldset ng-show="step == 2">
+                                    <h1>Good Choice.</h1>
+                <h2>{{stepTwoHeader}}</h2>
+                <p>{{stepTwoParagraph}}</p>
+                <div class="row">
+                    <div class="sc-view form-design-field sc-static-layout sc-regular-size col-md-4" id="formElement4">   <div class="field-wrapper">
+                            <div class="_100">
+                                <p>
+                                    <input type="text" placeholder="First Name*" name="firstName" id="field4"
+                                    ng-model="user.firstName"
+                                    ng-required="true">
+                                    <label for="field4">First Name<span style="color: #7d7d7d !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label>
+                                </p>
+                                <p class="errorMessage" ng-show="affiliate_faculty_lead_gen.firstName.$invalid && affiliate_faculty_lead_gen.firstName.$touched">You must enter your first name</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-view form-design-field sc-static-layout sc-regular-size col-md-4" id="formElement5">
+                        <div class="field-wrapper">
+                            <div class="_100">
+                                <p>
+                                    <input type="text" placeholder="Last Name*" name="lastName" id="field5"
+                                    ng-model="user.lastName"
+                                    ng-required="true">
+                                    <label for="field5">Last Name<span style="color: #7d7d7d !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label>
+                                </p>
+                                <p class="errorMessage" ng-show="affiliate_faculty_lead_gen.lastName.$invalid && affiliate_faculty_lead_gen.lastName.$touched">You must enter your last name</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-view form-design-field sc-static-layout sc-regular-size col-md-4" id="formElement6">
+                        <div class="field-wrapper">
+                            <div class="_100">
+                                <p>
+                                    <input type="text" placeholder="Phone*" name="phoneNumber" id="field6"
+                                    ng-model="user.phoneNumber"
+                                    ng-pattern="/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/"
+                                    ng-minlength="10">
+                                    <label for="field6">Phone<span style="color: #7d7d7d !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label>
+                                </p>
+                                <p class="errorMessage" ng-show="affiliate_faculty_lead_gen.phoneNumber.$invalid && affiliate_faculty_lead_gen.phoneNumber.$touched">You must enter a valid 10 digit phone number</p>
+                            </div>                            
+                        </div>
+                    </div>
+                </div><!-- row -->
+                <div class="row">               
+                    <div class="sc-view form-design-field sc-static-layout sc-regular-size col-md-8" id="formElement7">
+                        <div class="field-wrapper">
+                            <div class="_100">                            
+                                <p>
+                                    <input type="text" placeholder="Email*" name="emailAddress" id="field7"
+                                    ng-model="user.emailAddress"
+                                    ng-pattern="/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i"
+                                    ng-required="true">
+                                    <label for="field7">Email<span style="color: #7d7d7d !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">*</span></label>
+                                </p>
+                                <p class="errorMessage"ng-show="affiliate_faculty_lead_gen.emailAddress.$invalid && affiliate_faculty_lead_gen.emailAddress.$touched">You must enter a valid email</p>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="sc-view form-design-field sc-static-layout sc-regular-size col-md-4" id="formElement8">                    
+                        <div class="field-wrapper">
+                            <div class="_100">
+                                <p>
+                                    <input type="text" value="" placeholder="Referred by faculty (name)" name="referredBy" id="field8"><label for="field8">Referred by faculty (name)</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row -->
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement9">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <input type="hidden" value="ab22ce81-915e-e311-99a6-005056b80029" name="hfDegree" id="field9">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement10">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <input type="hidden" value="" name="hfCID1" id="field10">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement11">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <input type="hidden" value="" name="hfCID2" id="field11">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement12">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <input type="hidden" value="" name="hfCID3" id="field12">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement13">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <input type="hidden" value="100000002" name="hfCollege" id="field13">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement14">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <input type="hidden" value="38980113-DEA8-E011-B7AA-005056B8001D" name="hfAdmit" id="field14">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement15">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <label for="field15">Originating Website</label><input type="hidden" value="" name="originatingWebsite1" id="field15">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement16">
+                    <div class="field-wrapper hide-field">
+                        <div class="_100">
+                            <p>
+                                <label for="field16">Entry Term</label>
+                                <select name="dropdownEntryTerm" id="field16" type="hidden">                                    
+                                    <option value="d744863b-fd97-e311-8524-005056b8001d">
+                                        Unknown
+                                    </option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px" class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement17">
+                    <div class="field-wrapper">
+                        <div class="_100">
+                            <p>
+                                <label for="field17">What color is the sky?</label><input type="text" value="" name="sky" id="field16"><label class="instructions">Please answer blue above</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-view form-design-field sc-static-layout sc-regular-size" id="formElement17">
+                    <div class="field-wrapper">
+                        <div class="_100">
+                            <p class="button-container">
+                                <button type="button" class="previousButton btn btn-default" ng-click="prevStep()"> <i class="fa fa-caret-left" aria-hidden="true"></i> BACK</button>
+                            </p>
+                            <p>
+                                <input type="submit" class="submit-button btn btn-lg" value="SUBMIT"
+                                ng-disabled="affiliate_faculty_lead_gen.$invalid">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="requiredText">
+                    <p class="">* indicates required field</p>
+                </div>
+            </fieldset><!-- end step2 -->
+            </form>
+            
+           <!--<style media="screen" type="text/css">
+            .LV_validation_message{ font-weight:bold; margin: 0 0 0 5px; position: relative; top:-10px; }
+            .LV_valid{ color:#00CC00; display:none; }
+            .LV_invalid{ color:#CC0000; font-size:10px; }
+            .LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active { border-bottom: 1px solid #00CC00 !important; }
+            .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border-bottom: 1px solid #CC0000 !important; }
+            #formElement11, #formElement12 {
+                display: none;
+            }
+            </style>-->
+            
+        </div>
+    </div><!-- container main -->
+    <footer>
+      <div class="container footerContent">
+            <div>
+                <!-- <div class="logo-container col-sm-3">
+                    <img alt="Regis University" src="http://cdn.regis.edu/AF_first_page/img/regis_footer_logo.png" class="img-responsive">
+                </div> -->
+                <div class="address-container col-sm-offset-2 col-sm-8 ">
+                    <p class="phone_email">1.800.944.7667<span class="splitter"> | </span><span class="emailStack">info@regis.edu</span></p>
+                    <p class="address">3333 Regis Boulevard, <br class="breakHide">Denver, Colorado 80221-1099</p>
+                
+                    <div class="col-xs-12">
+                        <div class="social col-sm-12">
+                            <a title="facebook" target="_blank" href="https://www.facebook.com/regisuniversity?elqTrackId=6520624e67824b3dbbbddafd2bd771d6"><span aria-hidden="true" class="fa fa-facebook"></span></a>
+                            <a title="twitter" target="_blank" href="https://twitter.com/regisuniversity?elqTrackId=d85253ab8ec64df090b326fb31d747e0"><span aria-hidden="true" class="fa fa-twitter"></span></a>
+                            <a title="linkedIn" target="_blank" href="http://www.linkedin.com/company/regis-university?elqTrackId=a48e22a2389f4f1cbc5a3eb676ae82d1"><span aria-hidden="true" class="fa fa-linkedin"></span></a>
+                            <a title="youtube" target="_blank" href="http://www.youtube.com/regisuniversity?elqTrackId=e94ce70a14684726afde5534d8370adf"><span aria-hidden="true" class="fa fa-youtube"></span></a>
+                            <a title="google+" target="_blank" href="https://plus.google.com/+regisuniversity?elqTrackId=6c4ec3cf3de54288a93438fe7949d9f6"><span aria-hidden="true" class="fa fa-google-plus"></span></a>
+                            <a title="pinterest" target="_blank" href="http://pinterest.com/regisuniversity/?elqTrackId=756e92d3fe134c9599d2280f3621f97c"><span aria-hidden="true" class="fa fa-pinterest"></span></a>
+                            <a title="flickr" target="_blank" href="http://www.flickr.com/people/regisuniversity/?elqTrackId=f50aefc53c06442980474272a638c4c1"><span aria-hidden="true" class="fa fa-flickr"></span></a>
+                            <a title="instagram" target="_blank" href="http://instagram.com/regisuniversity?elqTrackId=d05a430614274eeea28b8bb103e3510b"><span aria-hidden="true" class="fa fa-instagram"></span></a>
+                        </div>
+                        <div class="copyright col-sm-12">
+                            ©Regis University, <script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div><!-- footerContent -->
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+                $(document).ready(function(){  
+                  $('#formElement17').hide();  
+                  $('input').focus(function(){  
+                      $('input[name="sky"]').val('blue');  
+                  });  
+                });  
+           </script>
+    <script>
+
+        var defaultHiddenFieldNameValue = ""; 
+
+        function getQueryStringParamValue(strQStrParam) { 
+
+        var strURL = document.location.href; 
+
+        var strQStrParamValue = ""; 
+
+                   if (strURL.indexOf('?') != -1)
+                   {
+                               strQStrParamValue = strURL.substr(strURL.indexOf('?') + 1);
+                               if (strQStrParamValue.indexOf(strQStrParam) != -1)
+                               {
+                                           strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf(strQStrParam));
+                                           strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf('=') + 1);
+                                           if (strQStrParamValue.indexOf('&') != -1)
+                                           strQStrParamValue = strQStrParamValue.substr(0, strQStrParamValue.indexOf('&'));
+                                           return strQStrParamValue;
+
+                               }else{
+                                           strQStrParamValue = defaultHiddenFieldNameValue;
+                                           return strQStrParamValue;
+                               }
+                   }else{
+                               strQStrParamValue = defaultHiddenFieldNameValue;
+                               return strQStrParamValue;
+                   }
+        } 
+
+        // Form name goes here 
+
+        var form = "affiliate_faculty_lead_gen"; 
+
+        function setCampaign(){ 
+
+          var elqForm = document.forms[form];
+
+          //repeat for each field to populate
+          elqForm.elements['hfCID1'].value = getQueryStringParamValue('cid1');
+          elqForm.elements['hfCID2'].value = getQueryStringParamValue('cid2');
+          elqForm.elements['hfCID3'].value = getQueryStringParamValue('cid3');
+          elqForm.elements['hfCollege'].value = getQueryStringParamValue('hfc');
+        } 
+
+        window.onload = setCampaign; 
+
+        var $objHead = $( 'head' );
+
+        // define a function to disable zooming
+        var zoomDisable = function() {
+            $objHead.find( 'meta[name=viewport]' ).remove();
+            $objHead.prepend( '<meta name="viewport" 
+                content="width=device-width, initial-scale=1.0, user-scalable=0" />' );
+        };
+
+        // ... and another to re-enable it
+        var zoomEnable = function() {
+            $objHead.find( 'meta[name=viewport]' ).remove();
+            $objHead.prepend( '<meta name="viewport" 
+                content="width=device-width, initial-scale=1.0, user-scalable=1" />');
+        };
+
+        // if the device is an iProduct, apply the fix whenever the users touches an input
+        if( navigator.userAgent.length && /iPhone|iPad|iPod/i.test( navigator.userAgent ) ) {
+            // define as many target fields as your like 
+            $( ".search-form input, .contact-form input" )
+                .on( { 'touchstart' : function() { zoomDisable() } } )
+                .on( { 'touchend' : function() { setTimeout( zoomEnable , 500 ) } } );
+         };
+
+
+        </script>
+       
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdn.regis.edu/AF_first_page/js/bootstrap.min.js"></script>
+    <script src="http://cdn.regis.edu/AF_first_page/js/jquery.placeholder.js"></script>    
+    <script src="http://cdn.regis.edu/AF_first_page/js/jquery.selectBoxIt.min.js"></script>
+    <script>
+     //Executes your code when the DOM is ready.  Acts the same as $(document).ready().
+    $(function() {
+      //Calls the selectBoxIt method on your HTML select box.
+        $("select").selectBoxIt({
+
+        // Uses the Twitter Bootstrap theme for the drop down
+        theme: "bootstrap",
+        autoWidth: false
+
+      })
+
+    });
+    </script>
+
+  
+</body></html>
